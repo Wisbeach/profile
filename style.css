@@ -1,56 +1,160 @@
 body {
+  display: flex;
+  flex-direction: column;
   color: rgb(249, 57, 185);
   background-color:rgb(8, 3, 9);
+  background-image: url("./images/flatland.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 20px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.content {
+  flex: 1;
 }
 
 h1 {
   font-size: 100px;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 h2 {
 
   font-size: 60px;
+  margin-bottom: 10px;
 }
 
 h3 {
   font-size: 40px;
 }
 
-#profilepic {
- width: 200px;
-height: 200px;
-border: 10px solid #FF69B4;
-border-radius: 50%;
-object-fit: cover;
+h2 {
+  margin-top: 0;
 }
 
-.container {
-  background: black;
+p {
+  font-size: 20px;
+}
+
+.profilepic-container {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border: 10px solid #FF69B4;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.profilepic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 1s;
+  z-index: 1;
+}
+
+.profilepic:hover {
+  transform: scale(1.1);
+}
+
+.profilepic-hover {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 1s;
+  border-radius: 50%;
+  border: 10px solid #FF69B4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilepic-container:hover .profilepic-hover  {
+  opacity: 1;
+}
+
+
+ .container {
+  background: transparent;
+   object-fit: cover;
 }
 
 .intro_card {
 
-    background: #1f0254;
+    background: transparent;
     opacity: 0.9;
-    padding: 10px;
+    padding: 20px;
     border: 10px solid #FF69B4;
-    margin: 20px auto;
-    border-radius: 40px;
+    box-shadow: 0 0 50px 15px #5d0330;
+    margin: 10px auto;
+    border-radius: 20%;
     text-align: center;
-    width: 50%;
+    width: 60%;
+    height: 30%;
     font-size: 30px;
     font-family: caveat;
     margin-top: 10px;
 }
 
+.fingerprint-button {
+
+  width: 120px;
+  height: 120px;
+  opacity: 0.7;
+  background-color: aqua;
+  border: 5px solid aqua;
+  box-shadow: 0 0 50px 15px #5d0330;
+  0 8 15px 2px rgba(255, 105, 180, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.fingerprint-button img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+.fingerprint-button:hover img {
+  filter: brightness(200%);
+    background-color: blue;
+  }
+
+
+.fingerprint-button:active img {
+  filter: brightness(300%);
+}
+
+.white-bold {
+  color: white;
+  font-weight: bold;
+}
 
 .middle_card {
   background: #1f0254;
   color: #fff;
-  opacity: 0.9;
+  opacity: 0.7;
   padding: 20px;
-  border: 3px solid #FF69B4;
+  border: 10px solid #FF69B4;
+  box-shadow: 0 0 50px 15px #5d0330;
   margin: 20px auto;
   border-radius: 30px;
   text-align: center;
@@ -58,28 +162,38 @@ object-fit: cover;
 }
 
  .bottom_card {
-  background: #1f0254;
-  opacity: 0.9;
+
+  display: flex;
   padding: 10px;
-  border: 3px solid #FF69B4;
-  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f0254;
+  opacity: 2;
+  border: 10px solid #FF69B4;
+  box-shadow: 0 0 50px 15px #5d0330;
+  margin: 10px auto;
   border-radius: 20px;
   text-align: center;
   width: 30%;
-  height: 100px
+  height: 100px;
+  font-family: caveat;
   font-size: 30px;
+  font-weight: bold;
 }
 
- ul {
+ul {
+  display: flex;
   list-style-type: none;
   display: flex;
   justify-content: space-around;
-
- }
+  gap: 10px;
+}
 
  li i {
-  font-size: 3em;
+  font-size: 2em;
 }
+
+
 
   .glow {
     color: white;
