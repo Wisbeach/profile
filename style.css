@@ -1,0 +1,98 @@
+body {
+  color: rgb(249, 57, 185);
+  background-color:rgb(8, 3, 9);
+  padding: 20px;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+#profilepic {
+ width: 200px;
+height: 200px;
+border: 10px solid #FF69B4;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.container {
+  background: black;
+}
+
+.intro_card {
+
+    background: #1f0254;
+    opacity: 0.9;
+    padding: 10px;
+    border: 10px solid #FF69B4;
+    margin: 20px auto;
+    border-radius: 40px;
+    text-align: center;
+    width: 50%;
+    font-size: 30px;
+    font-family: caveat;
+    margin-top: 10px;
+}
+
+
+.middle_card {
+  background: #1f0254;
+  color: #fff;
+  opacity: 0.9;
+  padding: 20px;
+  border: 3px solid #FF69B4;
+  margin: 20px auto;
+  border-radius: 30px;
+  text-align: center;
+  width: 40%;
+}
+
+ .bottom_card {
+  background: #1f0254;
+  opacity: 0.9;
+  padding: 10px;
+  border: 3px solid #FF69B4;
+  margin: 20px auto;
+  border-radius: 20px;
+  text-align: center;
+  width: 30%;
+  height: 100px
+  font-size: 30px;
+}
+
+ ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+
+ }
+
+ li i {
+  font-size: 3em;
+}
+
+  .glow {
+    color: white;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
