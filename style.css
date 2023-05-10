@@ -122,6 +122,7 @@ p {
 }
 
 .intro_card {
+
     background: transparent;
     opacity: 0.9;
     padding: 20px;
@@ -216,6 +217,8 @@ ul {
  li i {
   font-size: 2em;
 }
+
+
 
   .glow {
     color: white;
