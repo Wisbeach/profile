@@ -1,12 +1,50 @@
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .intro_card {
+    width: 100%;
+    height: 100%;
+  }
+  .middle_card {
+    width: 100%;
+    height: 100%;
+  }
+  .bottom_card {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* For tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 50%;
+  }
+  .intro_card {
+    width: 50%;
+    height: 100%;
+  }
+  .middle_card {
+    width: 50%;
+    height: 100%;
+  }
+  .bottom_card {
+    width: 50%;
+    height: 100%;
+  }
+}
+
 
 body {
   display: flex;
   flex-direction: column;
   color: rgb(249, 57, 185);
   background-color:rgb(8, 3, 9);
-  background-image: url("./images/flatland.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("./images/flatland.jpg");
+  background-repeat: repeat;
   padding: 20px;
 }
 
