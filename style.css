@@ -1,23 +1,3 @@
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
-}
 
 body {
   display: flex;
@@ -119,8 +99,8 @@ p {
   background: transparent;
    object-fit: cover;
 }
-.intro_card {
 
+.intro_card {
     background: transparent;
     opacity: 0.9;
     padding: 20px;
@@ -137,14 +117,12 @@ p {
 }
 
 .fingerprint-button {
-
   width: 120px;
   height: 120px;
   opacity: 0.7;
   background-color: aqua;
   border: 5px solid aqua;
-  box-shadow: 0 0 50px 15px #5d0330;
-  0 8 15px 2px rgba(255, 105, 180, 0.5);
+  box-shadow: 0 0 50px 15px #5d0330, 0 8px 15px 2px rgba(255, 105, 180, 0.5);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -158,9 +136,8 @@ p {
 
 .fingerprint-button:hover img {
   filter: brightness(200%);
-    background-color: blue;
-  }
-
+  background-color: blue;
+}
 
 .fingerprint-button:active img {
   filter: brightness(300%);
@@ -172,37 +149,37 @@ p {
 }
 
 .middle_card {
-  background: #1f0254;
-  color: #fff;
-  opacity: 0.7;
-  padding: 20px;
-  border: 10px solid #FF69B4;
-  box-shadow: 0 0 50px 15px #5d0330;
-  margin: 20px auto;
-  border-radius: 30px;
-  text-align: center;
-  width: 40%;
-}
+    background: #1f0254;
+    color: #fff;
+    opacity: 0.7;
+    padding: 20px;
+    border: 10px solid #FF69B4;
+    box-shadow: 0 0 50px 15px #5d0330;
+    margin: 20px auto;
+    border-radius: 30px;
+    text-align: center;
+    width: 40%;
+  }
 
  .bottom_card {
 
-  display: flex;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  background-color: #1f0254;
-  opacity: 2;
-  border: 10px solid #FF69B4;
-  box-shadow: 0 0 50px 15px #5d0330;
-  margin: 10px auto;
-  border-radius: 20px;
-  text-align: center;
-  width: 30%;
-  height: 100px;
-  font-family: caveat;
-  font-size: 30px;
-  font-weight: bold;
-}
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f0254;
+    opacity: 2;
+    border: 10px solid #FF69B4;
+    box-shadow: 0 0 50px 15px #5d0330;
+    margin: 10px auto;
+    border-radius: 20px;
+    text-align: center;
+    width: 30%;
+    height: 100px;
+    font-family: caveat;
+    font-size: 30px;
+    font-weight: bold;
+  }
 
 ul {
   display: flex;
@@ -215,8 +192,6 @@ ul {
  li i {
   font-size: 2em;
 }
-
-
 
   .glow {
     color: white;
