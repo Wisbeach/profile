@@ -5,7 +5,7 @@
 <html>
   <head>
     <title>Warren's Profile Page</title>
-    <meta name="profile page" content="my profile page for front end challenge">
+    <meta name="profile page" content="my profile page">
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="index.js"></script>
   </head>
 
   <body>
@@ -22,27 +24,48 @@
           <div class="intro_card">
               <h1 class="glow">Web Developer Warren</h1>
                 <div class="profilepic-container">
-                  <img class="profilepic" src="./images/HQRMNwDxExd92PMSb2VR--2--bhix6_4x.jpg" alt="Profile picture">
+                  <img class="profilepic" src="images/Untitled (5).png" alt="Profile picture">
                   <img class="profilepic-hover" src=./images/PXL_20210531_204914235.MP.jpg alt=" 2nd Profile picture">
                 </div>
               <h2 class="glow">Click Below to see something Cool!</h2>
-              <a href="https://www.youtube.com/watch?v=70HLAFyOgnQ"><button class="fingerprint-button" onclick="this.textContent = 'You got me!'"><img src="./images/fingerprint2.png" alt="Fingerprint"/></button></a>
+              <a href="https://curious-humans-network.herokuapp.com/"><button class="fingerprint-button" onclick="this.textContent = 'You got me!'"><img src="./images/fingerprint2.png" alt="Fingerprint"/></button></a>
           </div>
         </div>
+        <div class="middle_card">
+          <ul class="glow">
+            <li><a href="#" data-toggle="modal" data-target="#aboutModal" onclick="loadContent('about.html');"><h3>About</h3></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#projectsModal" onclick="loadContent('projects.html');"><h3>Projects</h3></a></li>
+            <li><a href="mailto:warren.wisbeach@gmail.com"><h3>Contact</h3></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-         <div class="middle_card">
-            <p> I’ve come to realize over the years that the work I’ve been involved with has always consisted of elements of conceptualizing ideas and designing solutions for them. In short, I really take great pleasure in building things and seeing them being utilized..</p>
+    <!-- About Modal -->
+    <div class="modal" id="aboutModal">
+      <div class="modal-content">
+        <!-- Content from about.html will be loaded here via AJAX -->
+      </div>
+    </div>
 
-         </div>
-            <div class="bottom_card">
-             <h3 class="glow">Follow Me</h3>
-              <ul>
-                  <li><a href="https://www.instagram.com/banjo_smuggler/"><i class="fa-brands fa-instagram "></i> </a></li>
-                  <li><a href="https://www.linkedin.com/in/warren-wisbeach-b2a89698/" ><i class="fa-brands fa-linkedin"></i> </a></li>
-                  <li><a href ="https://github.com/Wisbeach" ><i class="fa-brands fa-github"></i></a> </li>
-              </ul>
-           <div>
-            <br>
+    <!-- Projects Modal -->
+    <div class="modal" id="projectsModal">
+      <div class="modal-content">
+        <!-- Content from projects.html will be loaded here via AJAX -->
+      </div>
+    </div>
+          <div class="bottom_card_container">
+              <div class="bottom_card">
+              <h3 class="glow">Follow Me</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/banjo_smuggler/"><i class="fa-brands fa-instagram "></i> </a></li>
+                    <li><a href="https://www.linkedin.com/in/warren-wisbeach-b2a89698/" ><i class="fa-brands fa-linkedin"></i> </a></li>
+                    <li><a href ="https://github.com/Wisbeach" ><i class="fa-brands fa-github"></i></a> </li>
+                </ul>
+            <div>
+          </div>
+              <br>
+
          </div>
     </div>
   </body>
