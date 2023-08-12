@@ -1,32 +1,44 @@
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
   .container {
-    width: 700px;
+    width: 100%;
+  }
+  .intro_card {
+    width: 100%;
+  }
+  .middle_card {
+    width: 100%;
+  }
+  .bottom_card {
+    width: 100%;
   }
 }
 
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
+/* For tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container {
-    width: 500px;
+    width: 50%;
+  }
+  .intro_card {
+    width: 50%;
+  }
+  .middle_card {
+    width: 50%;
+  }
+  .bottom_card {
+    width: 50%;
   }
 }
 
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
-}
 
 body {
   display: flex;
   flex-direction: column;
   color: rgb(249, 57, 185);
   background-color:rgb(8, 3, 9);
-  background-image: url("./images/flatland.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("./images/flatland.jpg");
+  background-repeat: repeat;
   padding: 20px;
 }
 
@@ -58,6 +70,13 @@ h2 {
 
 h3 {
   font-size: 40px;
+  text-decoration: none;
+  color: white;
+}
+
+h3 li {
+  color: white;
+  text-decoration: none;
 }
 
 h2 {
@@ -113,8 +132,7 @@ p {
 
 .profilepic-container:hover .profilepic-hover  {
   opacity: 1;
-} 
-
+}
 
  .container {
   background: transparent;
@@ -122,7 +140,6 @@ p {
 }
 
 .intro_card {
-
     background: transparent;
     opacity: 0.9;
     padding: 20px;
@@ -139,14 +156,12 @@ p {
 }
 
 .fingerprint-button {
-
   width: 120px;
   height: 120px;
   opacity: 0.7;
   background-color: aqua;
   border: 5px solid aqua;
-  box-shadow: 0 0 50px 15px #5d0330;
-  0 8 15px 2px rgba(255, 105, 180, 0.5);
+  box-shadow: 0 0 50px 15px #5d0330, 0 8px 15px 2px rgba(255, 105, 180, 0.5);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -160,9 +175,8 @@ p {
 
 .fingerprint-button:hover img {
   filter: brightness(200%);
-    background-color: blue;
-  }
-
+  background-color: blue;
+}
 
 .fingerprint-button:active img {
   filter: brightness(300%);
@@ -174,37 +188,53 @@ p {
 }
 
 .middle_card {
-  background: #1f0254;
-  color: #fff;
-  opacity: 0.7;
-  padding: 20px;
-  border: 10px solid #FF69B4;
-  box-shadow: 0 0 50px 15px #5d0330;
-  margin: 20px auto;
-  border-radius: 30px;
-  text-align: center;
-  width: 40%;
-}
+  background: rgba(31, 2, 84, 0.7);
+  font-family: caveat;
+  color: white;
+    padding: 10px;
+    border: 10px solid #FF69B4;
+    box-shadow: 0 0 50px 15px #5d0330;
+    margin: 20px auto;
+    border-radius: 30px;
+    text-align: center;
+    width: 40%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .middle_card li {
+    margin-right: 90px; /* Adjust the margin value to add more space between items */
+    text-decoration: none;
+  }
+
+  /* To remove the right margin from the last item */
+  .middle_card li:last-child {
+    margin-right: 10px;
+  }
 
  .bottom_card {
 
-  display: flex;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  background-color: #1f0254;
-  opacity: 2;
-  border: 10px solid #FF69B4;
-  box-shadow: 0 0 50px 15px #5d0330;
-  margin: 10px auto;
-  border-radius: 20px;
-  text-align: center;
-  width: 30%;
-  height: 100px;
-  font-family: caveat;
-  font-size: 30px;
-  font-weight: bold;
-}
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f0254;
+    opacity: 2;
+    border: 10px solid #FF69B4;
+    box-shadow: 0 0 50px 15px #5d0330;
+    margin: 10px auto;
+    border-radius: 20px;
+    text-align: center;
+    width: 30%;
+    height: 100px;
+    font-family: caveat;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 60px !important;
+
+  }
+
 
 ul {
   display: flex;
@@ -216,6 +246,7 @@ ul {
 
  li i {
   font-size: 2em;
+  text-decoration: none;
 }
 
 
@@ -235,3 +266,178 @@ ul {
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
   }
+
+  .fa-brands {
+    /* Add any other styles you want for the icons */
+    color: #5DEDE4; /* Default color (black) for the icons */
+    font-size: 60px; /* Adjust the font size as needed */
+    transition: color 0.3s; /* Transition for smooth color change */
+  }
+
+  /* CSS rule for the hover effect */
+  .fa-brands:hover {
+    color: #fff; /* Change color to white on hover */
+    /* Add any other styles for the hover effect if needed */
+  }
+
+  .glow li a {
+    font-family: caveat;
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+  /* Add the styles for the about page */
+/* Add the styles for the about page */
+.about-page {
+  background: rgba(31, 2, 84, 0.7);
+  /* background-image: url("images/pawel-czerwinski-fPN1w7bIuNU-unsplash.jpg"); */
+  color: #fff;
+  padding: 20px;
+  border: 10px solid #FF69B4;
+  box-shadow: 0 0 50px 15px #5d0330;
+  margin: 20px auto;
+  border-radius: 30px;
+  text-align: center;
+  width: 70%;
+  font-family: rubik;
+}
+
+.about-background {
+  background-image: url("images/jr-korpa-7NoLliK6ntc-unsplash.jpg"); /* Replace with the path to your "About" page background image */
+  /* Keep or modify other background properties as needed */
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+/* Adjust the font size for the heading */
+.about-page h1 {
+  font-size: 2em; /* Increase the font size for the heading */
+  margin-top: 10px;
+}
+
+/* Adjust the font size for the content */
+.about-page p {
+  font-size: 24px; /* Increase the font size for the content */
+  line-height: 1.6;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
+  .about-page {
+    width: 100%;
+  }
+}
+
+/* For tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-page {
+    width: 50%;
+  }
+}
+.project-page {
+  background: rgba(31, 2, 84, 0.7);
+  /* background-image: url("images/pawel-czerwinski-fPN1w7bIuNU-unsplash.jpg"); */
+  color: #fff;
+  padding: 20px;
+  border: 10px solid #FF69B4;
+  box-shadow: 0 0 50px 15px #5d0330;
+  margin: 20px auto;
+  border-radius: 30px;
+  text-align: center;
+  width: 70%;
+  font-family: rubik;
+}
+
+.project-page a {
+  color: #FF69B4;
+  font-size: 25px;
+  text-decoration: underline; /* Add underline for better visibility */
+}
+
+.project-background {
+  /* background-image: url("images/jr-korpa-7NoLliK6ntc-unsplash.jpg"); Replace with the path to your "About" page background image */
+  /* Keep or modify other background properties as needed */
+
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+/* Adjust the font size for the heading */
+.project-page h1 {
+  font-size: 2em; /* Increase the font size for the heading */
+  margin-top: 10px;
+}
+
+/* Adjust the font size for the content */
+.project-page p {
+  font-size: 24px; /* Increase the font size for the content */
+  line-height: 1.6;
+}
+
+/* Add this to your existing CSS */
+/* Add this to your existing CSS */
+/* Add this to your existing CSS */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Set a fixed height for the modal */
+  height: 100%;
+  /* Enable vertical scrolling */
+  overflow-y: auto;
+}
+
+.modal-content {
+  position: absolute;
+  /* Center the content horizontally */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Adjust the top position based on content height */
+@media screen and (max-height: 768px) {
+  .modal-content {
+    /* Center the content at 30% from the top when the content height is greater than the viewport height */
+    top: 30%;
+    /* Set a maximum height for the modal content */
+    max-height: 70%;
+    /* Enable vertical scrolling within the modal content */
+    overflow-y: auto;
+  }
+}
+
+
+/* Add styles for the close button */
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #FF69B4;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add hover effect */
+.modal-close-button:hover {
+  background-color: #FF0080;
+}
+
+.button-link {
+  text-decoration: none;
+  color:#5DEDE4;
+}
