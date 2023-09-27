@@ -13,12 +13,14 @@
   /* Adjust the intro card and middle card width */
   .intro_card, .middle_card {
     width: 50%;
+    padding: 10px;
   }
 
   /* Adjust the bottom card width and margins */
   .bottom_card {
     width: 50%;
     margin-bottom: 20px; /* Adjust as needed */
+    padding: 10px
   }
 
   /* Adjust font sizes for better readability on small screens */
