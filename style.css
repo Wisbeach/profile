@@ -7,23 +7,23 @@
 
   /* Make the container full width */
   .container {
-    width: 100%;
+    width: 50%;
   }
 
   /* Adjust the intro card and middle card width */
   .intro_card, .middle_card {
-    width: 100%;
+    width: 50%;
   }
 
   /* Adjust the bottom card width and margins */
   .bottom_card {
-    width: 100%;
+    width: 50%;
     margin-bottom: 20px; /* Adjust as needed */
   }
 
   /* Adjust font sizes for better readability on small screens */
   h1 {
-    font-size: 40px;
+    font-size: 70px;
   }
 
   h2 {
