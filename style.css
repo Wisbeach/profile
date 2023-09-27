@@ -1,9 +1,9 @@
 /* Adjustments for mobile devices */
-@media only screen and (max-width: 768px) {
-  /* Remove the background image for better visibility on small screens */
-  body {
+@media only screen and (max-width: 991px) {
+
+  /* body {
     background-image: none;
-  }
+  } */
 
   /* Make the container full width */
   .container {
