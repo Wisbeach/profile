@@ -11,10 +11,24 @@
   }
 
   /* Adjust the intro card and middle card width */
-  .intro_card, .middle_card {
+  .intro_card {
     width: 100%;
     padding: 10px;
   }
+
+  .middle_card {
+    /* Adjust padding and margins for the middle card */
+
+    padding: 10px; /* Adjust as needed */
+    margin: 10px auto; /* Adjust as needed */
+    border-radius: 20px; /* Adjust as needed */
+  }
+   /* Adjust margins for the middle card list items (li) */
+   .middle_card ul {
+    margin: 0; /* Remove default margins */
+  }
+  .middle_card li {
+    margin: 10px
 
   /* Adjust the bottom card width and margins */
   .bottom_card {
