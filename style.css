@@ -1,9 +1,9 @@
 /* Adjustments for mobile devices */
-@media only screen and (max-width: 991px) {
-
-  /* body {
+@media only screen and (max-width: 768px) {
+  /* Remove the background image for better visibility on small screens */
+  body {
     background-image: none;
-  } */
+  }
 
   /* Make the container full width */
   .container {
@@ -34,9 +34,9 @@
     font-size: 24px;
   }
 
-  /* .glow {
+  .glow {
     font-size: 20px;
-  } */
+  }
 
   /* Adjust padding and margins for smaller screens */
   .intro_card {
