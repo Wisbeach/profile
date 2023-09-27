@@ -7,18 +7,18 @@
 
   /* Make the container full width */
   .container {
-    width: 50%;
+    width: 100%;
   }
 
   /* Adjust the intro card and middle card width */
   .intro_card, .middle_card {
-    width: 50%;
+    width: 100%;
     padding: 10px;
   }
 
   /* Adjust the bottom card width and margins */
   .bottom_card {
-    width: 50%;
+    width: 100%;
     margin-bottom: 20px; /* Adjust as needed */
     padding: 10px
   }
