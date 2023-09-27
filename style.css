@@ -16,8 +16,25 @@
     padding: 10px;
   }
 
-  .middle_card {
-    
+    /* Adjust the middle card width and padding */
+    .middle_card {
+      width: 90%; /* Adjust as needed */
+      padding: 10px;
+    }
+
+    /* Center-align the list items within the middle card */
+    .middle_card ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .middle_card li {
+      flex: 1;
+      text-align: center;
+    }
   }
 
   /* Adjust the bottom card width and margins */
@@ -81,8 +98,8 @@ body {
   color: rgb(249, 57, 185);
   background-color:rgb(8, 3, 9);
   background-size: cover;
-  background-image: url("./images/flatland.jpg");
-  background-repeat: repeat;
+  /* background-image: url("./images/flatland.jpg"); */
+  /* background-repeat: repeat; */
   padding: 20px;
 }
 
