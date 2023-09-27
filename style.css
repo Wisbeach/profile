@@ -1,34 +1,72 @@
-/* For mobile devices */
+/* Adjustments for mobile devices */
 @media only screen and (max-width: 768px) {
+  /* Remove the background image for better visibility on small screens */
+  body {
+    background-image: none;
+  }
+
+  /* Make the container full width */
   .container {
     width: 100%;
   }
-  .intro_card {
+
+  /* Adjust the intro card and middle card width */
+  .intro_card, .middle_card {
     width: 100%;
   }
-  .middle_card {
-    width: 100%;
-  }
+
+  /* Adjust the bottom card width and margins */
   .bottom_card {
     width: 100%;
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+
+  /* Adjust font sizes for better readability on small screens */
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .glow {
+    font-size: 20px;
+  }
+
+  /* Adjust padding and margins for smaller screens */
+  .intro_card {
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .middle_card {
+    padding: 5px;
+  }
+
+  .bottom_card {
+    padding: 5px;
   }
 }
 
-/* For tablets */
+/* Adjustments for tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Adjust the container width for tablets */
   .container {
-    width: 50%;
+    width: 80%;
   }
-  .intro_card {
-    width: 50%;
-  }
-  .middle_card {
-    width: 50%;
-  }
-  .bottom_card {
-    width: 50%;
-  }
+
+  /* Adjust other styles as needed for tablets */
 }
+
+/* Add any other media queries for larger screens as needed */
+
+/* Add your existing styles below this section */
+/* ... */
 
 
 body {
@@ -41,6 +79,7 @@ body {
   background-repeat: repeat;
   padding: 20px;
 }
+
 
 body, html {
   margin: 0;
