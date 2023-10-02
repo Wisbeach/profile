@@ -32,6 +32,8 @@
     }
 
     .middle_card li {
+      font-size: 14px;
+      white-space: wrap;
       flex: 1;
       text-align: center;
     }
@@ -58,7 +60,7 @@
   }
 
   .glow {
-    font-size: 40px;
+    font-size: 60px;
   }
 
   /* Adjust padding and margins for smaller screens */
