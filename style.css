@@ -1,90 +1,62 @@
 /* Adjustments for mobile devices */
 @media only screen and (max-width: 768px) {
-  /* Remove the background image for better visibility on small screens */
-  body {
-    background-image: none;
-  }
-
   /* Make the container full width */
   .container {
     width: 100%;
   }
+  .middle_card, .bottom_card {
+    border-width: 5px; /* Adjust as needed */
+  }
 
-  /* Adjust the intro card and middle card width */
-  .intro_card {
+  /* Adjust the intro, middle and bottom card styles */
+  .intro_card, .middle_card, .bottom_card {
     width: 100%;
     padding: 10px;
-  }
-
-    /* Adjust the middle card width and padding */
-    .middle_card {
-      width: 90%; /* Adjust as needed */
-      padding: 10px;
-    }
-
-    /* Center-align the list items within the middle card */
-    .middle_card ul {
-      display: flex;
-      justify-content: space-between;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .middle_card li {
-      font-size: 14px;
-      white-space: wrap;
-      flex: 1;
-      text-align: center;
-    }
-  }
-
-  /* Adjust the bottom card width and margins */
-  .bottom_card {
-    width: 100%;
-    margin-bottom: 20px; /* Adjust as needed */
-    padding: 10px
   }
 
   /* Adjust font sizes for better readability on small screens */
-  h1 {
-    font-size: 70px;
-  }
-
-  h2 {
+  h1, .glow {
     font-size: 30px;
   }
 
+  h2 {
+    font-size: 25px;
+  }
+
   h3 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
-  .glow {
-    font-size: 60px;
-  }
-
-  /* Adjust padding and margins for smaller screens */
-  .intro_card {
-    padding: 10px;
-    margin-top: 10px;
-  }
-
+  /* Adjust the middle card style */
   .middle_card {
-    padding: 5px;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .bottom_card {
-    padding: 5px;
+  .middle_card ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .middle_card li {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  /* Remove background image */
+  body {
+    background-image: none;
   }
 }
-
 /* Adjustments for tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* Adjust the container width for tablets */
   .container {
     width: 80%;
   }
-
+  .middle_card, .bottom_card {
+    border-width: 8px; /* Adjust as needed */
+  }
   /* Adjust other styles as needed for tablets */
 }
 
@@ -93,14 +65,16 @@
 /* Add your existing styles below this section */
 /* ... */
 
+* {
+  box-sizing: border-box;
+}
 
 body {
-  display: flex;
-  flex-direction: column;
+
   color: rgb(249, 57, 185);
   background-color:rgb(8, 3, 9);
   background-size: cover;
-  /* background-image: url("./images/flatland.jpg"); */
+  background-image: url("./images/flatland.jpg");
   /* background-repeat: repeat; */
   padding: 20px;
 }
@@ -111,10 +85,10 @@ body, html {
   padding: 0;
   height: 100%;
 }
-body {
+/* body {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .content {
   flex: 1;
@@ -255,27 +229,44 @@ p {
   background: rgba(31, 2, 84, 0.7);
   font-family: caveat;
   color: white;
-    padding: 10px;
-    border: 10px solid #FF69B4;
-    box-shadow: 0 0 50px 15px #5d0330;
-    margin: 20px auto;
-    border-radius: 30px;
-    text-align: center;
-    width: 40%;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .middle_card li {
-    margin-right: 90px; /* Adjust the margin value to add more space between items */
-    text-decoration: none;
-  }
+  padding: 10px;
+  border: 10px solid #FF69B4;
+  box-shadow: 0 0 50px 15px #5d0330;
+  margin: 20px auto;
+  border-radius: 30px;
+  width: 40%; /* Increased the width to ensure items can fit side by side */
+  height: auto;
+  display: flex;
+  flex-direction: row; /* Ensuring items are placed in a horizontal line */
+  justify-content: space-evenly;
+  /* overflow: auto; */
+  align-items: stretch;
+}
 
-  /* To remove the right margin from the last item */
+.middle_card .item {
+  flex-grow: 1;
+  /* flex: 1; */
+  text-align: center;
+  margin: 5 ; /* Added margins for spacing between items */
+  padding: 0; /* Optional: added for better visual spacing */
+  box-sizing: border-box;
+}
+
+.item-1, .item-2, .item-3 {
+  background-color: transparent;
+}
+
+.item a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+}
+
+
+  /* To remove the right margin from the last item
   .middle_card li:last-child {
     margin-right: 10px;
-  }
+  } */
 
  .bottom_card {
 
@@ -298,7 +289,9 @@ p {
     margin-bottom: 60px !important;
 
   }
+.bottom_card_container {
 
+}
 
 ul {
   display: flex;
@@ -317,7 +310,7 @@ ul {
 
   .glow {
     color: white;
-    text-align: center;
+    /* text-align: center; */
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
