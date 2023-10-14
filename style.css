@@ -8,6 +8,12 @@
     border-width: 5px; /* Adjust as needed */
   }
 
+  .bottom_card {
+    border: none; /* Remove the border */
+    background-color: transparent; /* Make the background transparent */
+    padding: 20px;
+  }
+
   /* Adjust the intro, middle and bottom card styles */
   .intro_card, .middle_card, .bottom_card {
     width: 100%;
@@ -31,9 +37,13 @@
   .middle_card {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    width: 40%; /* Increased the width to ensure items can fit side by side */
+    height: auto;
   }
 
-  .middle_card ul {
+  /* .middle_card ul {
     flex-direction: column;
     align-items: center;
   }
@@ -41,7 +51,7 @@
   .middle_card li {
     font-size: 16px;
     margin: 5px 0;
-  }
+  } */
 
   /* Remove background image */
   body {
@@ -75,8 +85,9 @@ body {
   background-color:rgb(8, 3, 9);
   background-size: cover;
   background-image: url("./images/flatland.jpg");
-  /* background-repeat: repeat; */
+  background-repeat: no-repeat;
   padding: 20px;
+
 }
 
 
@@ -85,10 +96,6 @@ body, html {
   padding: 0;
   height: 100%;
 }
-/* body {
-  display: flex;
-  flex-direction: column;
-} */
 
 .content {
   flex: 1;
@@ -179,7 +186,7 @@ p {
 
 .intro_card {
     background: transparent;
-    opacity: 0.9;
+    opacity: 1;
     padding: 20px;
     border: 10px solid #FF69B4;
     box-shadow: 0 0 50px 15px #5d0330;
@@ -274,7 +281,8 @@ p {
     padding: 10px;
     justify-content: center;
     align-items: center;
-    background-color: #1f0254;
+    background-image: none;
+    background-color: #19244A;
     opacity: 2;
     border: 10px solid #FF69B4;
     box-shadow: 0 0 50px 15px #5d0330;
@@ -290,6 +298,7 @@ p {
 
   }
 .bottom_card_container {
+  /* background-color: rgb(7,57,92); */
 
 }
 
