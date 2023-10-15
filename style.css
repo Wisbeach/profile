@@ -178,6 +178,10 @@ p {
 .profilepic-container:hover .profilepic-hover  {
   opacity: 1;
 }
+.profilepic, .profilepic-hover {
+  z-index: 10;
+}
+
 
  .container {
   background: transparent;
@@ -444,6 +448,7 @@ ul {
 /* Add this to your existing CSS */
 /* Add this to your existing CSS */
 .modal {
+  z-index: 1000;
   display: none;
   position: fixed;
   top: 0;
